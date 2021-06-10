@@ -1,0 +1,77 @@
+Devnet Associate Exam v1.0 (200-901)
+
+Topicos:
+  1.0 Software Development and Desing: "15%"
+    1.1: Compare data formats (XML, JSON and YAML): OK
+    1.2: Describe parsing of common data format (XML, JSON and YAML) to Python: OK
+      TIPO - BIBLIOTECA - ONE LINER
+      -----------------------------
+      JSON - json (nativo) - import json; json.loads(
+        '{"formato": "json"}')
+      -----------------------------
+      YAML - ruamel.yaml - from ruamel import yaml; yaml.safe_load(
+        'formato: yaml(ruamel)')
+      -----------------------------
+      XML - xml.etree.ElementTree (nativo) - import xml.etree.ElementTree as ET; e = ET.fromstring('<user>Henrique</user>'); e.text
+      XML - xml.dom.minidom (nativo) - import xml.dom.minidom as MD; MD.parseString('<user>Henrique</user>').childNodes[0].firstChild.data
+    1.3: Describe the concepts of test driven development: OK
+      - step 1. Write a test that fails
+      - step 2. Run test
+      - step 3. Write App code to make test pass
+      - step 4. Run all tests
+        If all tests pass:
+          - Refactor
+        If any test fails:
+          - Fix failed tests
+      - Back to step 4
+    1.4: Compare software development methods (agile, lean, waterfall): OK
+      Overal stages:
+      - Requirements Gathering
+      - Analysis
+      - Design
+      - Development
+      - Quality Assurance
+      - Deployment
+      - Enhancements/Maintenance
+      START OVER
+
+      Relevant definitions:
+        - Software Development Life Cycle (SDLC)
+
+      Waterfall: linear process as if going through phases
+        Pros:
+          - Design erros can be highlighted before any code is writen
+          - The process can only go through if the documentation is well writen
+            This documentation can be very usefull later
+          - Due to the rigid structure, progress measurement and setting milestones
+            becomes easier
+        Cons:
+          - It's very unlikelly that the client will gather all possible requirements
+          - Aplication re-engineer is very difficult and expensive
+          - Little no none flexibility
+          - There's only a product in the end of the process
+          - It's usually a lengthy process
+      Lean: it's a management philosophy / processes
+        - Lean is merely a concept. Without a way to implement it, it is of no 
+          value to the systems that need optimizing. Agile addresses the need for optimization.
+        - eliminate eveything that is useless. If you don't need it, get rid of it
+        Purpose: Which customer problems will the project solve?
+        Process: How can I measure each step of the process and assess several aspects of it
+        People: The root of it all. Right people to the right responsabilities and evaluation
+      Agile: based on small and incremental releases
+        Pros:
+          - Shorter feedback cycle
+          - Higher customer satisfaction
+          - Provides flexibility to the process
+        Cons:
+          - No emphasis on good documentation, therefore it's usually left
+            behind over newer product increments
+          - Usually the final product is unclear in the beggining phases
+    1.5: Explain the benefits of organizing code into methods / functions, classes and modules: OK
+      - code reusability
+      - one thing principle - where each block of code does only one thing
+      - easier to maintain and improve
+    1.6: Identify the advantages of common design patterns (MVC and Observer):
+      
+
+  2.0 Understanding and Using APIs: "20%"
